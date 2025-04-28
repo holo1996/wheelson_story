@@ -1,0 +1,308 @@
+/* 
+Основной тёмный фон	#363062
+Вторичный фон / заголовки	#4D4C7D
+Акценты / тени / подчеркивания	#827397
+Мягкие светлые элементы / фон карт	#D8B9C3 
+*/
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  background-color: #D8B9C3;
+  color: #363062;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  position: relative;
+}
+
+.main {
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.article {
+  width: 100%;
+  max-width: 160rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+
+/* logo */
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  min-height: 6vh;
+  height: 7.6rem;
+
+  gap: 1rem;
+  font-weight: 700;
+  color: #363062;
+
+  z-index: 2;
+}
+
+.logo img {
+  max-height: clamp(4rem, 6vh, 8rem);
+}
+
+.logo, .header {
+  min-height: clamp(4rem, 6vh, 8rem);
+  border-radius: 6rem;
+  padding: clamp(0.5rem, 1rem, 2rem) clamp(1rem, 2rem, 4rem);
+  background-color: hsla(341, 28%, 79%, 0.4);
+  transition: background-color .5s;
+}
+
+.header:hover {
+  background-color: hsla(341, 28%, 79%, 1);
+}
+
+
+/* Header */
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  min-height: 6vh;
+
+  
+  border-radius: 5rem;
+  left: 50%;
+  top: 1rem;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 2;
+}
+
+
+
+.header-nav ul{
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  gap: 4rem;
+}
+
+.header-nav a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #363062;
+
+  position: relative;
+  transition: color 0.3s;
+}
+
+.header-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #827397;
+  transition: width .5s;
+  left: 0;
+  bottom: -4px;
+}
+
+.header-nav a:hover {
+  color: #4d4c7d;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+/* Home */
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/video/car_shot.png) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 0;
+}
+
+.home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 48, 98, 0.5);
+  z-index: 2;
+}
+
+.home-content {
+  position: relative;
+  z-index: 3;
+  color: #D8B9C3;
+  padding: 3rem;
+}
+
+.home .home-title {
+  font-family: 'Major Mono Display', monospace;
+  font-size: clamp(3rem, 6vw, 6rem);
+  margin-bottom: clamp(2rem, 10rem, 20rem);
+}
+
+.home-suptitle {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.6rem, 2rem, 4rem);
+  font-weight: 400;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+
+/* About */
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.about-title {
+  min-width: clamp(33.33333%, 40%, 50%);
+  margin: 1rem auto;
+  font-family: 'Major Mono Display', monospace;
+  font-size: clamp(2vw, 6vw, 6rem);
+  background-color: #D8B9C3;
+  box-shadow: 0 0 10rem  #D8B9C3;
+  border-radius: 6rem;
+  text-align: center; 
+  align-items: center;
+}
+
+.about-content {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363062;
+  border-radius: 6rem;
+  box-shadow: 0 0 10rem  #363062;
+  padding: clamp(0.5rem, 2rem, 4rem);
+  z-index: -1;
+}
+
+.about-content_img {
+  max-width: 50%;
+  object-fit: cover;
+  border-radius: 6rem;
+}
+
+.about-content_text {
+  max-width: 45%;
+  color: #D8B9C3;
+  font-size: clamp(1.5rem, 3vh, 6rem);
+  text-align: left;
+}
