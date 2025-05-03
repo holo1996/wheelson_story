@@ -18,11 +18,9 @@
     <img src="assets/images/logo/logo_svg_black.svg" alt="logo">
     <span>Dream_Wheelson</span>
   </div>
+
   <header class="header">
-        
-        <!-- <i class="logo fa-solid fa-ghost"></i> -->
-    
-    <nav class="header-nav">
+    <nav class="header-nav" id="nav">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About_me</a></li>
@@ -30,6 +28,12 @@
         <li><a href="#contacts">Contacts</a></li>
       </ul>
     </nav>
+
+    <button class="burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+    
+    
   </header>
     
 
@@ -37,14 +41,15 @@
 
     <section class="section home" id="home">
       
-      <video class="home-video" autoplay muted loop playsinline>
+  <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
       <div class="home-overlay"></div>
       <div class="home-content">
         <h1 class="home-title title">Wheelson_Story</h1>
-        <h4 class="home-suptitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro dolorem, fugit vel ducimus eveniet.</h4>
+        <h4 class="home-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro dolorem, fugit vel ducimus eveniet.</h4>
+        <a class="cta-button" href="#about">more</a>
       </div>
       
 
