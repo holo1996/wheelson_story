@@ -221,7 +221,9 @@ body {
 }
 
 .burger span {
+  display: block;
   height: 0.3rem;
+  width: 3rem;
   background: #D8B9C3;
   border-radius: 10px;
 }
