@@ -10,6 +10,12 @@
   <script src="https://kit.fontawesome.com/5a1b487f85.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
+  <!-- Fancybox CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+
   <title>Wheelson Story</title>
 </head>
 
@@ -41,7 +47,7 @@
 
     <section class="section home" id="home">
       
-  <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
+      <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
@@ -49,7 +55,7 @@
       <div class="home-content">
         <h1 class="home-title title">Wheelson_Story</h1>
         <h4 class="home-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro dolorem, fugit vel ducimus eveniet.</h4>
-        <a class="cta-button" href="#about">more</a>
+        <a class="cta-button" id="cta-btn" href="#about">more</a>
       </div>
       
 
@@ -72,7 +78,135 @@
       
       <section class="section works" id="works">
 
-        
+        <h1 class="works-title title">WORKS</h1>
+
+        <div class="works-grid" id="works-grid">
+
+          <div class="work-card">
+            <a data-fancybox data-src="#modal-1" data-type="inline" href="javascript:;">
+              <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/-/preview/750x1000/" alt="preview">
+              <h3 class="work-title">Dream Shot</h3>
+              <time datetime="2024-07" class="work-date">July 2024</time>
+            </a>
+          
+            <!-- Дополнительные фото и видео -->
+            <div style="display: none;" id="modal-1">
+              <div class="modal-content">
+                <div class="modal-left">
+                  <!-- Слайдер Fancybox внутри -->
+                  <div class="grid thumb-grid" id="grid">
+                    
+                    <a class="grid-item" data-fancybox="gallery" href="https://wheelson-story.hb.ru-msk.vkcloud-storage.ru/bmw_audi-0.png">
+                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
+                    </a>
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/">
+                      <img src="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/" alt="thumb 2" />
+                    </a>
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/">
+                      <img src="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/" alt="thumb 3" />
+                    </a>
+                    <a 
+                      class="grid-item" 
+                      data-fancybox="gallery" 
+                      href="https://www.youtube.com/embed/sFs33UTE-N0?modestbranding=1&rel=0"
+                    >
+                      <img src="https://img.youtube.com/vi/sFs33UTE-N0/hqdefault.jpg" alt="video 1" />
+                    </a>
+
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/">
+                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
+                    </a>
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/">
+                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
+                    </a>
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/">
+                      <img src="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/" alt="thumb 2" />
+                    </a>
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/">
+                      <img src="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/" alt="thumb 3" />
+                    </a>
+                    <a 
+                      class="grid-item" 
+                      data-fancybox="gallery" 
+                      href="https://www.youtube.com/embed/sFs33UTE-N0?modestbranding=1&rel=0"
+                    >
+                      <img src="https://img.youtube.com/vi/sFs33UTE-N0/hqdefault.jpg" alt="video 1" />
+                    </a>
+
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/">
+                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
+                    </a>
+                  </div>
+                </div>
+            
+                <div class="modal-right">
+                  <div class="work-info" id="work-info">
+                    <h3 class="work-info_item work-title" id="work-title">Dream Shot</h3>
+                    <p class="work-info_item work-location" id="work-location">
+                      <h4>Location:</h4> 
+                      <span>Berlin</span>
+                    </p>
+                    <p class="work-info_item work-members" id="work-members">
+                      <h4>Members: </h4>
+                      <a href="https://instagram.com/dream_wheelson" target="_blank">@dream_wheelson</a>
+                    </p>
+                    <p class="work-info_item work-about" id="work-about">
+                      <h4>About: </h4>
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis ipsa exercitationem veniam ad placeat neque blanditiis fugit officia quasi!</span>
+                    </p>
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="work-card">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <h3 class="work-title">Works name</h3>
+            <time datetime="2024-07" class="work-date">July 2024</time>
+          </div>
+          <div class="work-card">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <h3 class="work-title">Works name</h3>
+            <time datetime="2024-07" class="work-date">July 2024</time>
+          </div>
+          <div class="work-card">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <h3 class="work-title">Works name</h3>
+            <time datetime="2024-07" class="work-date">July 2024</time>
+          </div>
+          <div class="work-card">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <h3 class="work-title">Works name</h3>
+            <time datetime="2024-07" class="work-date">July 2024</time>
+          </div>
+          <div class="work-card">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <h3 class="work-title">Works name</h3>
+            <time datetime="2024-07" class="work-date">July 2024</time>
+          </div>
+          <div class="work-card">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <h3 class="work-title">Works name</h3>
+            <time datetime="2024-07" class="work-date">July 2024</time>
+          </div>
+          <div class="work-card">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <h3 class="work-title">Works name</h3>
+            <time datetime="2024-07" class="work-date">July 2024</time>
+          </div>
+          <div class="work-card">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <h3 class="work-title">Works name</h3>
+            <time datetime="2024-07" class="work-date">July 2024</time>
+          </div>
+          
+          
+          <button class="show-all" id="show-all">show all</button>
+          
+        </div>
         
       </section>
       
@@ -82,12 +216,19 @@
   <footer class="footer contacts" id="contacts">
 
     <h4>Short-cut information</h4>
-    <h6>Created by ©holo_sleep</h6>
+    <h6>Created by <a href="https://instagram.com/holo_sleep">©holo_sleep</a></h6>
+    
     
   </footer>
 
-    
-  <script src="js/script.js"></script>
+
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!-- Fancybox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  
+  
+  <script src="js/script.js"></script> 
+
 </body>
 
 </html>
