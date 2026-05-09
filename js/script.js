@@ -11,11 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     burger?.classList.toggle("active");
   });
 
-  // Скрытие карточек
+  // Показ/скрытие карточек (первые 6 видны по умолчанию в HTML)
   let expanded = false;
-  cards.forEach((card, index) => {
-    if (index >= 6) card.classList.add('hidden');
-  });
 
   btn?.addEventListener("click", () => {
     expanded = !expanded;
