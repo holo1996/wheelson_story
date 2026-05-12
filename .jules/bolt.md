@@ -1,0 +1,3 @@
+## 2025-05-15 - [Preventing CLS and Redundant Requests via HTML-first Hiding]
+**Learning:** Using JavaScript to hide elements (like gallery cards) on `DOMContentLoaded` causes both Cumulative Layout Shift (CLS) as the browser initially renders the full list, and redundant network requests as the browser starts fetching images before the script executes.
+**Action:** Always pre-apply 'hidden' classes or 'display: none' in the source HTML for elements that should not be visible on initial load. This ensures the browser's preload scanner doesn't fetch unnecessary assets and the initial layout is stable.
