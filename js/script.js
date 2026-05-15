@@ -13,15 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Скрытие карточек
   let expanded = false;
-  cards.forEach((card, index) => {
-    if (index >= 6) card.classList.add('hidden');
-  });
+  // Карточки уже скрыты в HTML для предотвращения CLS и лишних запросов.
 
   btn?.addEventListener("click", () => {
     expanded = !expanded;
     cards.forEach((card, index) => {
       if (index >= 6) {
         card.classList.toggle("hidden", !expanded);
+        card.hidden = !expanded;
       }
     });
     btn.textContent = expanded ? "show less" : "show all";
