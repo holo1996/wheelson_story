@@ -5,7 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://ucarecdn.com">
   <!-- Шрифт Miso можно подключить локально, если он у тебя есть как файл, или заменить временно на аналог, например Roboto Mono -->
   <script src="https://kit.fontawesome.com/5a1b487f85.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
@@ -21,7 +26,7 @@
 
 <body>
   <div class="logo">
-    <img src="assets/images/logo/logo_svg_black.svg" alt="logo">
+    <img src="assets/images/logo/logo_svg_black.svg" alt="logo" width="300" height="300">
     <span>Dream_Wheelson</span>
   </div>
 
@@ -38,16 +43,16 @@
     <button class="burger" id="burger" aria-label="menu">
       <span></span><span></span><span></span>
     </button>
-    
-    
+
+
   </header>
-    
+
 
   <main class="main">
 
     <section class="section home" id="home">
-      
-      <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
+
+      <video class="home-video" autoplay muted loop playsinline poster="assets/video/car_shot.png" width="2553" height="1080">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
@@ -57,10 +62,10 @@
         <h4 class="home-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem porro dolorem, fugit vel ducimus eveniet.</h4>
       </div>
       <a class="cta-button" id="cta-btn" href="#about">more</a>
-      
+
 
     </section>
-    
+
     <article class="article">
 
 
@@ -68,14 +73,14 @@
 
         <h1 class="about-title title">About me</h1>
         <div class="about-content">
-          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" no-repeat>
+          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" width="720" height="768" loading="lazy" decoding="async">
           <p class="about-content_text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui odit voluptatibus consequatur aliquam enim molestias vero explicabo neque eaque numquam aperiam accusamus aspernatur, veritatis tempora maxime minus cumque facere!
           </p>
         </div>
 
       </section>
-      
+
       <section class="section works" id="works">
 
         <h1 class="works-title title">WORKS</h1>
@@ -84,66 +89,66 @@
 
           <div class="work-card">
             <a data-fancybox data-src="#modal-1" data-type="inline" href="javascript:;">
-              <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/-/preview/750x1000/" alt="preview">
+              <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/-/preview/750x1000/" alt="preview" width="750" height="1000" loading="lazy" decoding="async">
               <h3 class="work-title">Dream Shot</h3>
               <time datetime="2024-07" class="work-date">July 2024</time>
             </a>
-          
+
             <!-- Дополнительные фото и видео -->
             <div style="display: none;" id="modal-1">
               <div class="modal-content">
                 <div class="modal-left">
                   <!-- Слайдер Fancybox внутри -->
                   <div class="grid thumb-grid" id="grid">
-                    
+
                     <a class="grid-item" data-fancybox="gallery" href="https://wheelson-story.hb.ru-msk.vkcloud-storage.ru/bmw_audi-0.png">
-                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
+                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" width="1440" height="1800" loading="lazy" decoding="async" />
                     </a>
                     <a class="grid-item" data-fancybox="gallery" href="https://wheelson-story.hb.ru-msk.vkcloud-storage.ru/bmw_audi-1.png">
-                      <img src="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/" alt="thumb 2" />
+                      <img src="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/" alt="thumb 2" width="1440" height="1800" loading="lazy" decoding="async" />
                     </a>
                     <a class="grid-item" data-fancybox="gallery" href="https://wheelson-story.hb.ru-msk.vkcloud-storage.ru/bmw_audi-2.png">
-                      <img src="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/" alt="thumb 3" />
+                      <img src="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/" alt="thumb 3" width="750" height="1000" loading="lazy" decoding="async" />
                     </a>
-                    <a 
-                      class="grid-item" 
-                      data-fancybox="gallery" 
+                    <a
+                      class="grid-item"
+                      data-fancybox="gallery"
                       href="https://www.youtube.com/embed/sFs33UTE-N0?modestbranding=1&rel=0"
                     >
-                      <img src="https://img.youtube.com/vi/sFs33UTE-N0/hqdefault.jpg" alt="video 1" />
+                      <img src="https://img.youtube.com/vi/sFs33UTE-N0/hqdefault.jpg" alt="video 1" width="480" height="360" loading="lazy" decoding="async" />
                     </a>
 
                     <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/">
-                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
+                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" width="1440" height="1800" loading="lazy" decoding="async" />
                     </a>
                     <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/">
-                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
+                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" width="1440" height="1800" loading="lazy" decoding="async" />
                     </a>
                     <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/">
-                      <img src="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/" alt="thumb 2" />
+                      <img src="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/" alt="thumb 2" width="1440" height="1800" loading="lazy" decoding="async" />
                     </a>
                     <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/">
-                      <img src="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/" alt="thumb 3" />
+                      <img src="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/" alt="thumb 3" width="750" height="1000" loading="lazy" decoding="async" />
                     </a>
-                    <a 
-                      class="grid-item" 
-                      data-fancybox="gallery" 
+                    <a
+                      class="grid-item"
+                      data-fancybox="gallery"
                       href="https://www.youtube.com/embed/sFs33UTE-N0?modestbranding=1&rel=0"
                     >
-                      <img src="https://img.youtube.com/vi/sFs33UTE-N0/hqdefault.jpg" alt="video 1" />
+                      <img src="https://img.youtube.com/vi/sFs33UTE-N0/hqdefault.jpg" alt="video 1" width="480" height="360" loading="lazy" decoding="async" />
                     </a>
 
                     <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/">
-                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
+                      <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" width="1440" height="1800" loading="lazy" decoding="async" />
                     </a>
                   </div>
                 </div>
-            
+
                 <div class="modal-right">
                   <div class="work-info" id="work-info">
                     <h3 class="work-info_item work-title" id="work-title">Dream Shot</h3>
                     <p class="work-info_item work-location" id="work-location">
-                      <h4>Location:</h4> 
+                      <h4>Location:</h4>
                       <span>Berlin</span>
                     </p>
                     <p class="work-info_item work-members" id="work-members">
@@ -155,61 +160,61 @@
                       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis ipsa exercitationem veniam ad placeat neque blanditiis fugit officia quasi!</span>
                     </p>
                     </div>
-                  
+
                 </div>
               </div>
             </div>
           </div>
-          
-          
+
+
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
-          
-          
+
+
           <button class="show-all" id="show-all">show all</button>
-          
+
         </div>
-        
+
       </section>
-      
+
     </article>
   </main>
 
@@ -217,17 +222,16 @@
 
     <span>thank u 4 watching</span>
     <span>Created by <a href="https://instagram.com/holo_sleep">©holo_sleep</a></span>
-    
-    
+
+
   </footer>
 
 
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <!-- Fancybox JS -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  
-  
-  <script src="js/script.js"></script> 
+
+
+  <script src="js/script.js"></script>
 
 </body>
 
