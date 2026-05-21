@@ -1,0 +1,3 @@
+## 2025-05-14 - [Static Performance & Layout Stability]
+**Learning:** Pre-applying 'hidden' classes in HTML for elements that should be toggled by JS is superior to hiding them via JS loops. It eliminates "Flash of Unstyled Content" (FOUC), reduces CLS, and prevents the browser from potentially downloading hidden assets prematurely. Additionally, using relative paths for assets is crucial for portability across different environments (local vs production).
+**Action:** Always prefer CSS/HTML for initial states; use JS only for transitions. Ensure all visual media has explicit dimensions to reserve space.
