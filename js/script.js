@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("show-all");
 
 
+  // Bolt: Simplified script. Removed redundant card hiding loop as cards are now hidden via HTML classes.
+  // This reduces Total Blocking Time (TBT) on page load.
+
   // Бургер
   burger?.addEventListener("click", () => {
     nav?.classList.toggle("active");
@@ -13,9 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Скрытие карточек
   let expanded = false;
-  cards.forEach((card, index) => {
-    if (index >= 6) card.classList.add('hidden');
-  });
 
   btn?.addEventListener("click", () => {
     expanded = !expanded;
