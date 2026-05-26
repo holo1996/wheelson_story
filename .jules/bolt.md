@@ -1,0 +1,3 @@
+## 2024-05-26 - [CSS/JS Initial State Synchronization]
+**Learning:** Moving initial UI state (like hiding elements) from JavaScript to static HTML/CSS is superior for performance as it eliminates Flash of Unstyled Content (FOUC) and stabilizes the layout (CLS). However, this creates a dependency where any JavaScript-based toggles must perfectly match the CSS/HTML thresholds. A mismatch (e.g., HTML hiding from index 3 but JS toggling from index 6) leads to broken UI logic where some elements become permanently unreachable.
+**Action:** Always verify that JavaScript iteration thresholds or selectors for interactive elements exactly match the initial state defined in the HTML/CSS when refactoring for FOUC prevention.
