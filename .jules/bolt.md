@@ -1,0 +1,3 @@
+## 2024-05-15 - Performance Optimization for Wheelson Story
+**Learning:** Static state management (using CSS classes for initial visibility) is superior to JavaScript-based layout manipulation for performance. It eliminates Flash of Unstyled Content (FOUC) and prevents Cumulative Layout Shift (CLS) during the critical rendering path. Removing unused heavy dependencies like FontAwesome when not in use is a low-hanging fruit with high impact on bundle size.
+**Action:** Always prefer pre-applying state (like '.hidden') in the source HTML/CSS. Explicitly define dimensions for ALL media to reserve layout space and eliminate CLS.
