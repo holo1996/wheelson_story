@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Скрытие карточек
   let expanded = false;
-  cards.forEach((card, index) => {
-    if (index >= 6) card.classList.add('hidden');
-  });
 
   btn?.addEventListener("click", () => {
     expanded = !expanded;

@@ -1,0 +1,3 @@
+## 2025-01-24 - Syncing HTML/JS state for FOUC prevention
+**Learning:** Hiding elements via JavaScript on `DOMContentLoaded` causes a "Flash of Unstyled Content" (FOUC). Pre-applying the `hidden` class in the static HTML is superior for performance and UX. However, it requires strict synchronization between the HTML and the JS logic that toggles these classes to prevent logic desynchronization and broken UI states.
+**Action:** Always prefer static CSS/HTML for initial visibility states. When doing so, verify that the indices of hidden elements in HTML perfectly match the threshold defined in the JS toggle logic.
