@@ -59,6 +59,7 @@ a:not([class]) {
 /* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
+  height: auto; /* Bolt: Prevent CLS when width/height are set in HTML */
   display: block;
 }
 
@@ -387,6 +388,7 @@ body {
 .about-content_img {
   flex: 1 1 300px;
   max-width: 50%;
+  aspect-ratio: 720 / 768; /* Bolt: Reserve space for image */
   object-fit: cover;
   border-radius: 6rem;
   box-shadow: 0 0 2rem #827397;
@@ -488,6 +490,7 @@ body {
 
 .work-card img {
   width: 100%;
+  aspect-ratio: 1440 / 1800; /* Bolt: Reserve space for image to prevent CLS */
   max-height: clamp(30rem, 50rem, 70rem);
   border-radius: 2rem;
   box-shadow: 0 0 2rem #827397, inset 0 0 5rem #827397;
