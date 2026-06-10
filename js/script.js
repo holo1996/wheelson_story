@@ -13,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Скрытие карточек
   let expanded = false;
-  cards.forEach((card, index) => {
-    if (index >= 6) card.classList.add('hidden');
-  });
+  // Bolt: Initial hidden state is now pre-applied in HTML to prevent FOUC and improve performance.
 
   btn?.addEventListener("click", () => {
     expanded = !expanded;
