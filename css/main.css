@@ -59,6 +59,7 @@ a:not([class]) {
 /* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
+  height: auto; /* Bolt: Ensures responsiveness when width/height attributes are present to prevent CLS */
   display: block;
 }
 
