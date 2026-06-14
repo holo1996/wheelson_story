@@ -13,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Скрытие карточек
   let expanded = false;
-  cards.forEach((card, index) => {
-    if (index >= 6) card.classList.add('hidden');
-  });
+  // Bolt: Initial card hiding moved to HTML to prevent CLS/FOUC
 
   btn?.addEventListener("click", () => {
     expanded = !expanded;
