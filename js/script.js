@@ -11,11 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     burger?.classList.toggle("active");
   });
 
-  // Скрытие карточек
+  // Bolt: pre-hidden via HTML to prevent FOUC
   let expanded = false;
-  cards.forEach((card, index) => {
-    if (index >= 6) card.classList.add('hidden');
-  });
 
   btn?.addEventListener("click", () => {
     expanded = !expanded;
