@@ -1,0 +1,3 @@
+## 2026-06-21 - Optimization of LCP via Video Poster Compression
+**Learning:** Critical LCP bottlenecks in simple static sites often come from unoptimized media assets. A 4.1MB PNG poster for a background video can delay the visual "ready" state significantly. Additionally, surgical diff tools like `replace_with_git_merge_diff` are sensitive to CRLF line endings commonly found in this repository's `index.html`, which can cause patch failures and noisy diffs.
+**Action:** Always normalize `index.html` to LF line endings before applying surgical diffs. Compress image posters to <300KB JPEG and ensure relative paths are used to avoid 404s and improve portability. Keep profiling scripts and temporary logs out of the final commit.
