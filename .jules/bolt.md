@@ -1,0 +1,3 @@
+## 2026-06-21 - LCP Optimization and CLS Prevention
+**Learning:** Large PNG files (4.1MB) used as video posters significantly degrade LCP. Converting to optimized JPEG (215KB) with appropriate dimensions provides a massive (~95%) performance boost without noticeable quality loss for mobile/preview users. Lack of explicit width/height on images causes layout shifts (CLS) when assets load.
+**Action:** Always audit video posters and heavy hero images first. Convert PNG to JPEG/WebP for non-transparent backgrounds. Ensure all <img> tags have width/height attributes and `loading="lazy"` for below-the-fold content.
