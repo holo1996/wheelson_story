@@ -1,8 +1,8 @@
-/* 
+/*
 Основной тёмный фон	#363062
 Вторичный фон / заголовки	#4D4C7D
 Акценты / тени / подчеркивания	#827397
-Мягкие светлые элементы / фон карт	#D8B9C3 
+Мягкие светлые элементы / фон карт	#D8B9C3
 */
 
 /* Указываем box sizing */
@@ -42,7 +42,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  
+
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -59,6 +59,7 @@ a:not([class]) {
 /* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
+  height: auto; /* Bolt: Ensure responsive images with HTML width/height attributes */
   display: block;
 }
 
@@ -139,7 +140,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  
+
   position: absolute;
   left: 1rem;
   top: 1rem;
@@ -176,10 +177,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   min-height: 6vh;
 
-  
+
   border-radius: 5rem;
   left: 50%;
   top: 1rem;
@@ -262,7 +263,7 @@ body {
   color: #363062;
   box-shadow: 0 0 3rem  #363062;
   border-radius: 6rem;
-  text-align: center; 
+  text-align: center;
   align-items: center;
 }
 
@@ -451,9 +452,9 @@ body {
   padding: clamp(1rem, 2vw, 2rem);
   border-radius: 2rem;
   background-color: #363062;
-  transition: 
+  transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease-out, 
+    box-shadow 0.3s ease-out,
     opacity .3s ease-out,
     height .3s ease-out;
   transform: scale(1);
@@ -592,7 +593,7 @@ body {
 }
 
 .footer a {
-  text-decoration: none;  
+  text-decoration: none;
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
   color: #363062;
@@ -637,8 +638,8 @@ body {
   .logo span {
     display: none;
   }
-  
-  
+
+
 }
 
 
@@ -650,8 +651,8 @@ body {
     width: 6rem;
     height: 6rem;
   }
-  
-  
+
+
   /* Header */
   .header-nav ul {
     position: absolute;
@@ -676,7 +677,7 @@ body {
   .header:hover {
     background: transparent;
   }
-  
+
   .header-nav.active ul {
     /* display: flex; */
     opacity: 1;
@@ -701,7 +702,7 @@ body {
     padding: 0;
     background-color: transparent;
   }
-  
+
   /* Home */
   .home .home-text {
     max-width: 90%;
