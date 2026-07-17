@@ -4,6 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bolt: Preconnect to external origins to reduce initial connection handshakes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <!-- Bolt: Preload critical background video poster to optimize Largest Contentful Paint (LCP) -->
+  <link rel="preload" as="image" href="assets/video/car_shot.jpg" fetchpriority="high">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <!-- Шрифт Miso можно подключить локально, если он у тебя есть как файл, или заменить временно на аналог, например Roboto Mono -->
@@ -47,7 +56,8 @@
 
     <section class="section home" id="home">
       
-      <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
+      <!-- Bolt: Standardized to relative path and optimized ~206KB progressive JPEG poster for massive LCP optimization -->
+      <video class="home-video" autoplay muted loop playsinline poster="assets/video/car_shot.jpg">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
@@ -68,7 +78,8 @@
 
         <h1 class="about-title title">About me</h1>
         <div class="about-content">
-          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" no-repeat>
+          <!-- Bolt: Removed invalid 'no-repeat' attribute, added loading="lazy" for offscreen image -->
+          <img class="about-content_img" src="assets/images/JDM.jpg" alt="About me" loading="lazy">
           <p class="about-content_text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui odit voluptatibus consequatur aliquam enim molestias vero explicabo neque eaque numquam aperiam accusamus aspernatur, veritatis tempora maxime minus cumque facere!
           </p>
@@ -163,42 +174,42 @@
           
           
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
