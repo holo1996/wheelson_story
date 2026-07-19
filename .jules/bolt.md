@@ -1,0 +1,5 @@
+# Bolt Journal - Wheelson Story
+
+## 2026-06-21 - LCP Poster Optimization & Path Fix
+**Learning:** Heavy PNG files used as video poster backgrounds can block the Largest Contentful Paint (LCP) metric and increase overall payload unnecessarily. In this repository, the original `car_shot.png` was 4.1MB with an absolute prefix path `/wheelson_story/...` which caused 404 errors during local development. Converting this asset to progressive JPEG (`car_shot.jpg`) resized to a standard responsive width (1280px) and utilizing absolute-free relative paths reduces payload by 95% while solving routing issues.
+**Action:** When a video background is used, always optimize the poster image by compressing it to progressive JPEG/WebP and ensure paths are relative to avoid environment-specific loading failures. Additionally, preloading critical poster images via `<link rel="preload" as="image" ... fetchpriority="high">` instructs the browser to download the critical visual element before executing scripts.
