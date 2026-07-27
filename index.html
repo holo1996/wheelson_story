@@ -7,7 +7,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <!-- Шрифт Miso можно подключить локально, если он у тебя есть как файл, или заменить временно на аналог, например Roboto Mono -->
-  <script src="https://kit.fontawesome.com/5a1b487f85.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5a1b487f85.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
   <!-- Fancybox CSS -->
@@ -16,12 +16,13 @@
   href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
   />
 
+  <link rel="preload" as="image" href="assets/video/car_shot.jpg" fetchpriority="high">
   <title>Wheelson Story</title>
 </head>
 
 <body>
   <div class="logo">
-    <img src="assets/images/logo/logo_svg_black.svg" alt="logo">
+    <img src="assets/images/logo/logo_svg_black.svg" alt="logo" width="400" height="400">
     <span>Dream_Wheelson</span>
   </div>
 
@@ -47,7 +48,7 @@
 
     <section class="section home" id="home">
       
-      <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
+      <video class="home-video" autoplay muted loop playsinline poster="assets/video/car_shot.jpg" width="2554" height="1080">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
@@ -68,7 +69,7 @@
 
         <h1 class="about-title title">About me</h1>
         <div class="about-content">
-          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" no-repeat>
+          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" width="720" height="768" loading="lazy">
           <p class="about-content_text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui odit voluptatibus consequatur aliquam enim molestias vero explicabo neque eaque numquam aperiam accusamus aspernatur, veritatis tempora maxime minus cumque facere!
           </p>
@@ -84,7 +85,7 @@
 
           <div class="work-card">
             <a data-fancybox data-src="#modal-1" data-type="inline" href="javascript:;">
-              <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/-/preview/750x1000/" alt="preview">
+              <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/-/preview/750x1000/" alt="preview" width="750" height="1000">
               <h3 class="work-title">Dream Shot</h3>
               <time datetime="2024-07" class="work-date">July 2024</time>
             </a>
@@ -163,42 +164,42 @@
           
           
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
