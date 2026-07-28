@@ -273,7 +273,8 @@ body {
   min-width: 100%;
   min-height: 100vh;
   display: flex;
-  /* background-image: url(/wheelson_story/assets/video/car_shot.png); */
+  /* Bolt: Optimized path */
+  /* background-image: url(../assets/video/car_shot.jpg); */
   flex-direction: column;
   justify-content: center;
   align-items: center;
