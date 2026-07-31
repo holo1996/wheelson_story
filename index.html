@@ -16,6 +16,9 @@
   href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
   />
 
+  <!-- Bolt: Preload the critical video poster image to optimize LCP -->
+  <link rel="preload" as="image" href="assets/video/car_shot.jpg" fetchpriority="high">
+
   <title>Wheelson Story</title>
 </head>
 
@@ -47,7 +50,8 @@
 
     <section class="section home" id="home">
       
-      <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
+      <!-- Bolt: Optimized JPEG poster with relative path to avoid 404 and minimize payload size -->
+      <video class="home-video" autoplay muted loop playsinline poster="assets/video/car_shot.jpg">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
