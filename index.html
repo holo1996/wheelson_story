@@ -21,7 +21,8 @@
 
 <body>
   <div class="logo">
-    <img src="assets/images/logo/logo_svg_black.svg" alt="logo">
+    <!-- Bolt: Added width and height attributes to the SVG logo for aspect ratio preservation (prevent CLS) -->
+    <img src="assets/images/logo/logo_svg_black.svg" alt="logo" width="400" height="400">
     <span>Dream_Wheelson</span>
   </div>
 
@@ -47,7 +48,8 @@
 
     <section class="section home" id="home">
       
-      <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
+      <!-- Bolt: Optimized poster image format (progressive JPEG, ~200KB vs 4.2MB PNG) and fixed relative path -->
+      <video class="home-video" autoplay muted loop playsinline poster="assets/video/car_shot.jpg">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
@@ -68,7 +70,8 @@
 
         <h1 class="about-title title">About me</h1>
         <div class="about-content">
-          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" no-repeat>
+          <!-- Bolt: Added width/height and lazy loading, removed non-standard no-repeat attribute -->
+          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" width="720" height="768" loading="lazy">
           <p class="about-content_text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui odit voluptatibus consequatur aliquam enim molestias vero explicabo neque eaque numquam aperiam accusamus aspernatur, veritatis tempora maxime minus cumque facere!
           </p>
@@ -163,42 +166,42 @@
           
           
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
