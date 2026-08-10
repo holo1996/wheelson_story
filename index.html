@@ -15,6 +15,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
   />
+  <!-- Preload LCP Video Poster Image -->
+  <link rel="preload" as="image" href="assets/video/car_shot.jpg" fetchpriority="high">
 
   <title>Wheelson Story</title>
 </head>
@@ -47,7 +49,7 @@
 
     <section class="section home" id="home">
       
-      <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
+      <video class="home-video" autoplay muted loop playsinline poster="assets/video/car_shot.jpg">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
