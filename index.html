@@ -7,7 +7,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <!-- Шрифт Miso можно подключить локально, если он у тебя есть как файл, или заменить временно на аналог, например Roboto Mono -->
-  <script src="https://kit.fontawesome.com/5a1b487f85.js" crossorigin="anonymous"></script>
+  <!-- Bolt: Added defer attribute to FontAwesome script to eliminate render-blocking -->
+  <script src="https://kit.fontawesome.com/5a1b487f85.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
   <!-- Fancybox CSS -->
@@ -222,7 +223,7 @@
   </footer>
 
 
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <!-- Bolt: Removed unused external imagesloaded.pkgd.min.js CDN script to save bandwidth and reduce HTTP requests -->
   <!-- Fancybox JS -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   
