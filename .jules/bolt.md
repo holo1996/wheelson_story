@@ -1,0 +1,3 @@
+## 2026-06-21 - Hero Video Poster LCP Optimization
+**Learning:** Large PNG video poster images (4.1MB) serve as critical Largest Contentful Paint (LCP) bottlenecks on hero video sections. Converting PNG posters to optimized JPEG (~195KB, 1280px width) combined with `<link rel="preload" as="image" fetchpriority="high">` reduces poster payload by ~95% and significantly accelerates initial visual render.
+**Action:** Always inspect video poster attributes, replace heavy PNG formats with progressive JPEGs/WebP, add explicit preload hints, and verify relative path correctness across local and production environments.
