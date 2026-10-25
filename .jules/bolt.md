@@ -1,0 +1,3 @@
+## 2026-06-21 - Hero Video Poster Optimization & Preloading
+**Learning:** Video element poster images serve as critical LCP candidates. Using raw 4MB+ PNG assets causes significant render delays and network bottlenecks on hero video sections. Converting to compressed progressive JPEG (~180KB) and adding high-priority preload `<link rel="preload" as="image" href="..." fetchpriority="high">` cuts asset load time by ~95% and optimizes Largest Contentful Paint (LCP).
+**Action:** Always check hero video `<video poster="...">` images for size and format, optimize them to <200KB JPEG/WebP, and preload them in `<head>`.
