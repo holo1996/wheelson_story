@@ -10,6 +10,8 @@
   <script src="https://kit.fontawesome.com/5a1b487f85.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
+    <!-- Preload video poster for LCP optimization -->
+  <link rel="preload" as="image" href="assets/video/car_shot.jpg" fetchpriority="high">
   <!-- Fancybox CSS -->
   <link
   rel="stylesheet"
@@ -21,7 +23,7 @@
 
 <body>
   <div class="logo">
-    <img src="assets/images/logo/logo_svg_black.svg" alt="logo">
+    <img src="assets/images/logo/logo_svg_black.svg" alt="logo" width="400" height="400">
     <span>Dream_Wheelson</span>
   </div>
 
@@ -47,7 +49,7 @@
 
     <section class="section home" id="home">
       
-      <video class="home-video" autoplay muted loop playsinline poster="/wheelson_story/assets/video/car_shot.png">
+      <video class="home-video" autoplay muted loop playsinline poster="assets/video/car_shot.jpg">
         <source src="assets/video/Car_optimized.mp4" type="video/mp4">
       </video>
 
@@ -68,7 +70,8 @@
 
         <h1 class="about-title title">About me</h1>
         <div class="about-content">
-          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" no-repeat>
+          <!-- Bolt: explicit dimensions prevent CLS, lazy loading defers offscreen image -->
+          <img class="about-content_img" src="assets/images/JDM.jpg" alt="I'am" width="720" height="768" loading="lazy" decoding="async">
           <p class="about-content_text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores qui odit voluptatibus consequatur aliquam enim molestias vero explicabo neque eaque numquam aperiam accusamus aspernatur, veritatis tempora maxime minus cumque facere!
           </p>
@@ -84,7 +87,7 @@
 
           <div class="work-card">
             <a data-fancybox data-src="#modal-1" data-type="inline" href="javascript:;">
-              <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/-/preview/750x1000/" alt="preview">
+              <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/-/preview/750x1000/" alt="preview" width="750" height="1000" loading="lazy" decoding="async">
               <h3 class="work-title">Dream Shot</h3>
               <time datetime="2024-07" class="work-date">July 2024</time>
             </a>
@@ -96,13 +99,13 @@
                   <!-- Слайдер Fancybox внутри -->
                   <div class="grid thumb-grid" id="grid">
                     
-                    <a class="grid-item" data-fancybox="gallery" href="https://wheelson-story.hb.ru-msk.vkcloud-storage.ru/bmw_audi-0.png">
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/-/format/webp/">
                       <img src="https://ucarecdn.com/cb82c27e-d30b-407d-9b2b-f7ebf9f8e947/" alt="thumb 1" />
                     </a>
-                    <a class="grid-item" data-fancybox="gallery" href="https://wheelson-story.hb.ru-msk.vkcloud-storage.ru/bmw_audi-1.png">
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/-/format/webp/">
                       <img src="https://ucarecdn.com/b67743e3-d16f-4aec-a3cc-b34f26976e16/" alt="thumb 2" />
                     </a>
-                    <a class="grid-item" data-fancybox="gallery" href="https://wheelson-story.hb.ru-msk.vkcloud-storage.ru/bmw_audi-2.png">
+                    <a class="grid-item" data-fancybox="gallery" href="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/format/webp/">
                       <img src="https://ucarecdn.com/79dca0d8-7b77-4587-89c1-9c6cad46b30e/-/preview/750x1000/" alt="thumb 3" />
                     </a>
                     <a 
@@ -163,42 +166,42 @@
           
           
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test1.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test2.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
           <div class="work-card">
-            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview">
+            <img src="assets/images/cards/perview/test3.jpg" alt="Work preview" width="1440" height="1800" loading="lazy" decoding="async">
             <h3 class="work-title">Works name</h3>
             <time datetime="2024-07" class="work-date">July 2024</time>
           </div>
